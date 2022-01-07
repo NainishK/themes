@@ -1,0 +1,86 @@
+{% extends 'users/users-main.html' %}
+{% load static %}
+{% block content %}
+	<!--end::Head-->
+	<!--begin::Body-->
+	<body id="kt_body" class="header-fixed header-mobile-fixed subheader-enabled sidebar-enabled page-loading">
+		<!--begin::Main-->
+		<div class="d-flex flex-column flex-root">
+			<!--begin::Login-->
+			<div class="login login-1 login-signin-on d-flex flex-column flex-lg-row flex-column-fluid bg-white" id="kt_login">
+				<!--begin::Content-->
+				<div class="login-content flex-row-fluid d-flex flex-column justify-content-center position-relative overflow-hidden p-7 mx-auto">
+					<!--begin::Content body-->
+					<div class="d-flex flex-column-fluid flex-center">
+						<!--begin::Signin-->
+						<div class="login-form login-signin">
+							<!--begin::Form-->
+							<form class="form" novalidate="novalidate" id="kt_login_signin_form">
+								<!--begin::Title-->
+								<div class="pb-10 pt-lg-0 pt-5 text-center">									
+									<img src="{% static 'assets/media/logos/logo.png' %}" class="max-h-75px mb-5" alt="" />
+									<h3 class="font-weight-bolder text-dark font-size-h4 font-size-h1-lg">Company Login</h3>
+								</div>
+								<!--begin::Title-->
+								
+								<!--begin::Form group-->
+								<div class="form-group">
+									<label class="font-size-h6 font-weight-bolder text-dark">Email</label>
+									<input class="form-control form-control-solid h-auto py-6 px-6 rounded-lg" type="text" name="username" autocomplete="off" />
+								</div>
+								<!--end::Form group-->
+								<!--begin::Form group-->
+								<div class="form-group">
+									<div class="d-flex justify-content-between mt-n5">
+										<label class="font-size-h6 font-weight-bolder text-dark pt-5">Password</label>
+										<a href="forgot-password.html" class="text-primary font-size-h6 font-weight-bolder text-hover-primary pt-5">Forgot Password ?</a>
+									</div>
+									<input class="form-control form-control-solid h-auto py-6 px-6 rounded-lg" type="password" name="password" autocomplete="off" />
+								</div>
+								<!--end::Form group-->
+								<!--begin::Action-->
+
+								<div class="form-group d-flex flex-wrap justify-content-between align-items-center mt-2">
+									<button id="kt_login_signin_submit" class="btn btn-primary font-weight-bold px-9 py-4 my-3">Sign In</button>
+									<div class="my-3 mr-2">
+										<span class="text-muted mr-2">New to mNutrify?</span>
+										<a href="{% url 'register' %}" class="font-weight-bold">Sign up here</a>
+									</div>
+									
+								</div>
+								<!--end::Action-->
+							</form>
+							<!--end::Form-->
+						</div>
+						<!--end::Signin-->
+					</div>
+					<!--end::Content body-->
+					<!--begin::Content footer-->
+					<div class="d-flex justify-content-lg-start justify-content-center align-items-end py-7 py-lg-0">
+						<div class="text-dark-50 font-size-lg mr-0">
+							<span class="text-muted">2020©</span>	<a href="http://keenthemes.com/metronic" target="_blank" class="text-dark-75 text-hover-primary">Nutrify India</a>. <span class="text-muted">All Right Reserved.</span>
+						</div>
+						<a href="#" class="text-primary font-size-lg ml-5">Policy</a>
+						<a href="#" class="text-primary font-size-lg ml-5">Terms</a>
+					</div>
+					<!--end::Content footer-->
+				</div>
+				<!--end::Content-->
+				<!--begin::Aside-->
+				<div class="login-aside d-flex flex-column flex-row-auto" style="background-color: #FCFFF1;">
+					<!--begin::Aside Top-->
+					<div class="d-flex flex-column-auto flex-column pt-lg-40 pt-15">
+						
+					</div>
+					<!--end::Aside Top-->
+					<!--begin::Aside Bottom-->
+					<div class="aside-img d-flex flex-row-fluid bgi-no-repeat bgi-position-y-bottom bgi-position-x-center" style="background-image: url(assets/media/svg/illustrations/login-visual-1.svg)"></div>
+					<!--end::Aside Bottom-->
+				</div>
+				<!--begin::Aside-->
+			</div>
+			<!--end::Login-->
+		</div>
+
+		<!--end::Main-->
+{% endblock content %}
