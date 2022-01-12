@@ -13,7 +13,8 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 		<!--end::Fonts-->
 		<!--begin::Page Custom Styles(used by this page)-->
-		<link href="assets/css/pages/login/login-1.css" rel="stylesheet" type="text/css" />
+		<link href="{% static 'assets/css/pages/login/login-1.css' %}" rel="stylesheet" type="text/css" />
+		<link href="{% static 'assets/css/pages/wizard/wizard-4.css' %}" rel="stylesheet" type="text/css" />
 		<!--end::Page Custom Styles-->
 		<!--begin::Global Theme Styles(used by all pages)-->
 		<link href="{% static 'assets/plugins/global/plugins.bundle.css' %}" rel="stylesheet" type="text/css" />
@@ -23,7 +24,7 @@
 		<!--end::Global Theme Styles-->
 		<!--begin::Layout Themes(used by all pages)-->
 		<!--end::Layout Themes-->
-		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+		<link rel="shortcut icon" href="{% static 'assets/media/logos/favicon.ico' %}" />
 	</head>
 
     {% block content %}
@@ -41,6 +42,9 @@
     <!--end::Global Theme Bundle-->
     <!--begin::Page Scripts(used by this page)-->
     <script src="{% static 'assets/js/pages/custom/login/login-general.js' %}"></script>
+	<script src="{% static 'assets/js/pages/custom/wizard/wizard-4.js'%}"></script>
+	<script src="{% static 'assets/js/pages/crud/forms/widgets/bootstrap-datepicker.js' %}"></script>
+	<script src="{% static 'assets/js/pages/crud/forms/widgets/form-repeater.js' %}"></script>
     <!--end::Page Scripts-->
 </body>
 <!--end::Body-->
